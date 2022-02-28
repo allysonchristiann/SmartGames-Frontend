@@ -15,7 +15,7 @@ function createCard(game){
 }
 
 function main(){
-    var gameData = makeGet("http://192.168.100.6:3333/game")
+    var gameData = makeGet("http://seuIpLocal:3333/game")
     var game = JSON.parse(gameData);
     var cardContainer = document.getElementById("games-section")
     game.forEach(element => {
